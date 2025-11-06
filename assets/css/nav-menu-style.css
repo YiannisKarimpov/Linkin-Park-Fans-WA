@@ -2,56 +2,36 @@ ul{
     margin: auto;
     list-style: none; 
     display: flex;
-    justify-content: center;
-    
-    
-       
-
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1.8rem;
 }
 ul li {
-    display: inline-block;
+    display: flex;
     position: relative;
-    line-height: 30px;
+    line-height: 2.5rem;
     text-align: left;
-
 }
 ul li a{
     display: flex;
-    justify-content: center;
-    
+    justify-content: left;
     padding: 10px 20px;
     text-decoration: none;
     color: black;
     border-radius: 100px;
-    
 }
 ul li a:hover{
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;
-    opacity: 50%;
+    color: rgb(255, 255, 255);
+    background-color: #4b4b4b;
+    opacity: 100%;
+}
+ img{
+    border-style: none;
+    padding-top: 16%;
+ }
 
-}
-ul li ul.dropdown {
-    width: 336px;
-    background: #ffffff;
-    display: none;
-    position: absolute;
-    z-index: 999;
-    left: 0;
-    
 
-}
-ul li:hover ul.dropdown{
-    display: block;
-    padding: 0;
-    background-color: transparent;
-}
-ul li ul.dropdown li{
-    display: block;
-}
 
     
-  .navmenu{
-    display: flex;
-    justify-content: center;
-  }  
+  

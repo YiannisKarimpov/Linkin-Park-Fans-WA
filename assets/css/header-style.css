@@ -1,18 +1,18 @@
 .page-wrapper{
-    width: 85%;
+    width: 90%;
     margin: auto;
     border: 1px solid red;
 }
 
 .header-banner{
-    display: block;
-    height: auto;
-    align-content: center;
-    background-image: url(/assets/images/banner.jpg);
-    background-size: 100%;
-    
-
+    background-image: url(/assets/images/linkin-park-banner.png);
+    background-size: 86% 100%;
+    background-repeat: no-repeat;
+    background-position: 16vh;
+    padding: auto;
 }
+
+
 
 
 
