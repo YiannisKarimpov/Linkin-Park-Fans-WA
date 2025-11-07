@@ -2,14 +2,22 @@
     width: 90%;
     margin: auto;
     border: 1px solid red;
+    background-color: #1e1f20;
 }
 
 .header-banner{
-    background-image: url(assets/images/linkin-park-banner.png);
+    background-image: url(/assets/images/linkin-park-banner.png);
     background-size: 86% 100%;
     background-repeat: no-repeat;
-    background-position: 16vh;
-    padding: auto;
+    background-position: right;
+    background-position: fixed;
+    
+    
+    
+}
+
+@media screen (min-width: 720px);{
+    
 }
 
 

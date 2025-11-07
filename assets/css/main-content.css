@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: left;
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100% !important;
+}
+
+p, h2, h1{
+    display: flex;
+    justify-content: flex-start;
+    text-wrap: inherit;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #dfe6e6;
+}
+p{
+    border: 8px solid silver;
+    
+}
+
+img{
+    float: left;
+}
