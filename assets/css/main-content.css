@@ -1,7 +1,12 @@
-.container{
+
+/* HOME PAGE STYLE */
+.page-wrapper{
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    width: 90%;
+
 }
+
 
 iframe {
     aspect-ratio: 16 / 9;
@@ -22,5 +27,6 @@ p{
 }
 
 img{
-    float: left;
+    max-width: 100%;
+    
 }
