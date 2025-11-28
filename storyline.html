@@ -7,7 +7,8 @@
     <title>Linkin Park Storyline</title>
     <link rel="stylesheet" href="assets/css/header-style.css">
     <link rel="stylesheet" href="assets/css/albums-main.css">
-    
+    <link rel="stylesheet" href="assets/css/main-content.css">
+
 
 </head>
 <body>
@@ -15,36 +16,67 @@
         <header class="header-banner">
             
             <nav class="nav-menu">
-                    <ul>
-                        <li><a href="index.html"><img src="assets/images/linkin-park-logo.png" alt="Home Page Button" width="100"></a> </li>
-                        <li><a href="music.html">Music</a> </li>
-                        <li><a href="discography.html">Discography</a> </li>
-                        <li><a href="events.html">Events</a> </li>                        
-                        <li> <a href="storyline.html">Storyline</a></li>
-                        <li> <a href="about.html">About Us</a> </li>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox"/>
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    
+                    <ul class="menu__box">
+                        
+                        <li><a class="menu__item" href="music.html">Music</a> </li>
+                        <li><a class="menu__item" href="discography.html">Discography</a> </li>
+                        <li><a class="menu__item" href="events.html">Events</a> </li>                        
+                        <li> <a class="menu__item" href="storyline.html">Storyline</a></li>
+                        <li> <a class="menu__item" href="about.html">About Us</a><li>
+                        <a class="menu__item" href="https://linkinpark.com/" target="_blank">Linkin Park &copy;</a></li> </li>
                     </ul>
+                    <div class="img-home-btn-area">
+
+                    <ul><li ><a class="img-home-btn" href="index.html"><img src="assets/images/linkin-park-logo.png" alt="Home Page Button" width="100"></a> </li>
+                        
+                    </ul></div>
+                </div>
             </nav>
         </header>
     </div>
     <div class="page-wrapper">
     <main>
-        <section>
+        <section class="container">
             <h1>Linkin Park Storyline</h1>
+            
+
+
             <article>
                 Linkin Park's story begins in 1996 with high school friends Mike Shinoda, Rob Bourdon, and Brad Delson forming a band called Xero. After adding Joe Hahn, Dave "Phoenix" Farrell, and Mark Wakefield, they released a demo but struggled to find a record deal, leading to Wakefield and Farrell's temporary departure. The band found its iconic sound when they recruited singer Chester Bennington in 1999, changed their name to Hybrid Theory, and then Linkin Park before releasing their breakthrough album Hybrid Theory in 2000. The band experienced massive success until the tragic death of Bennington in 2017. Following a hiatus, the band announced a new era with new vocalist Emily Armstrong and the release of their album From Zero in 2024
 
             </article>
             <h1>Early years (1996–1999)</h1>
-            <img src="assets/images/first-photo-of-linkin-park.webp" alt="First Photo Of Linkin Park 1998-1999">
-            <ul>
-                <li><b>Formation:</b> In 1996, high school friends Mike Shinoda, Rob Bourdon, and Brad Delson formed the band Xero.</li>
-                <li><b>Expansion:</b> They were later joined by DJ Joe Hahn, bassist Dave "Phoenix" Farrell, and singer Mark Wakefield.</li>
-                <li><b>Challenges:</b> The band recorded demos but struggled to gain a record deal, leading to frustration.</li>
-                <li><b>Change in vocalist:</b> After Wakefield left, the band recruited Chester Bennington, whose powerful vocals impressed everyone.</li>
-                <li><b>Name changes:</b> The band first changed its name to Hybrid Theory in 1999 before becoming Linkin Park in 2000 to avoid confusion with another band. </li>
+            <div class="slider-wrapper">
+            <div class="slider">
+            <img id="slider-1" src="assets/images/first-photo-of-linkin-park.webp" alt="First Photo Of Linkin Park 1998-1999">
+            <img id="slider-2" src="assets/images/early-years-linkin-park.jpeg" alt="First Photo Of Linkin Park 1998-1999">
+            <img id="slider-3" src="assets/images/first-photo-of-linkin-park.webp" alt="First Photo Of Linkin Park 1998-1999">
+            </div>
+            <div class="slider-nav">
+                <a href="#slider-1"></a>
+                <a href="#slider-2"></a>
+                <a href="#slider-3"></a>
+            </div>
+            </div>
+            <div class="formation">
+            <ul class="formation">
+                <li><b><h2>Formation:</h2></b> In 1996, high school friends Mike Shinoda, Rob Bourdon, and Brad Delson formed the band Xero.</li>
+                <li><b><h2>Expansion:</h2></b> They were later joined by DJ Joe Hahn, bassist Dave "Phoenix" Farrell, and singer Mark Wakefield.</li>
+                <li><b><h2>Challenges:</h2></b> The band recorded demos but struggled to gain a record deal, leading to frustration.</li>
+                <li><b><h2>Change in vocalist:</h2></b> After Wakefield left, the band recruited Chester Bennington, whose powerful vocals impressed everyone.</li>
+                <li><b><h2>Name changes:</h2></b> The band first changed its name to Hybrid Theory in 1999 before becoming Linkin Park in 2000 to avoid confusion with another band. </li>
             </ul>
+            </div>
 
             <iframe src="https://www.youtube.com/embed/tcKE3BAuJvw?si=8FcPsoEZ_78tNRLO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            
 
         </section>
         <section>
@@ -63,21 +95,193 @@
                 <li><b>New album and tour:</b>They released their album From Zero in 2024 and embarked on the "FROM ZERO WORLD TOUR," marking a new chapter for the band. </li>
             </ul>
         </section>
+        <div class="grid-container">
+        <!-- <div class="chester"> -->
+        <!-- <section> -->
+            <div class="item">
+            <h1>Chester Bennington</h1>
+            <p>Chester Charles Bennington was an American musician, born on March 20, 1976, best known as the vocalist for Linkin Park. Before joining Linkin Park, he was a member of local Arizona-based band Grey Daze. Over his career, he was also a member of multiple different projects, including Stone Temple Pilots, Kings of Chaos, Bucket of Weenies, and his own Dead By Sunrise. His singing and screaming were a beacon of hope and healing for his millions of fans struggling with mental health issues as he did himself, inspiring many musicians and helping countless others through their own difficulties. Bennington passed away on July 20, 2017 from suicide.</p>
+            </div>
+            <div class="item">
+            <h1>Early Life</h1>
+            <p>Chester was born in Phoenix, Arizona on March 20, 1976 to a mother who was a nurse and a police detective father with a specialty in child sexual abuse cases. He went to Greenway High School. Since he learned how to talk, Chester told everybody that he was going to grow up to be a singer. His brother played Foreigner records all the time and by the time Chester was two he used to run around singing their songs. His mother recalls how he would sing and act out all the parts from the 1980 musical comedy film Popeye for everyone that came over to the house.
 
+            As Chester grew older, he started developing his distinctive singing style. "I did it all the wrong way. I basically went at it till it didn't hurt anymore. Its something I've been blessed with." His favorite band was Ministry and he would always try to mimic Al Jourgensen's highly produced/compressed vocals the best he could, without using any effects. Other groups he listened to were Depeche Mode, The Cure, The Misfits, Fugazzi, Minor Threat, The Smiths, Skinny Puppy and Neitzer Ebb. In school, he got into musical theater, started playing music, and traveled the country with a stage production of You Are The Child.</p>
+            </div>
+            <div class="item">
+            <h1>Career</h1>
+            <h2>Sean Dowdell And His Friends?</h2>
+            <p>One of Chester's friends, Jason Abner, was a pretty good guitar player and was looking for someone who could sing, to which Chester said, "I can sing." So they both broke into the church behind a house, stole a microphone and started doing music together. They learnt every The Doors song they could play and when Chester started doing his first compositions, they were very influenced by them. He said, "We liked them as they were so poetic, spacey and deep. So it was something along those lines." This opened the door to some other young musicians that have been in bands and they invited Chester to audition in his first band, Sean Dowdell And His Friends? The second he opened his mouth to sing Pearl Jam's 'Alive,' everyone in the room was blown away by his immense potential and they immediately decided to recruit him.
+
+            Once the band was put together, they wrote about 10 songs and learnt about 10 cover songs including 'I Wanna Be Sedated' by The Ramones, 'Would' by Alice In Chains and other songs by Stone Temple Pilots, Guns N Roses, and Pearl Jam.
+
+            None of the members took the band very seriously, but soon they had a following and started producing marketing material such as t-shirts, flyers, stickers, and pictures of the band. They also recorded a self-titled cassette tape containing 3 of their original songs — their only songs ever recorded in studio. The photographer responsible for the demo tape cover was Sean's uncle Mike Walliser.
+
+            For over a year and a half, they played 50-70 shows around the Phoenix area, some of them taking place at the Greenway High School, where Chester and bass player Jason Cekoric went to school.
+
+            Chester was constantly late to practice and it became a problem for everybody in the band after a while. When he got in trouble with drugs at school and his dad (a police officer at the time) grounded him for a long time, it also affected things with the band. Chester was reportedly kicked out after he had a fight with Rob Rogers. The band brought in an older singer named Jack Shoots with whom they played a few rehearsals and one show before Chester returned. However, the band had run its course by that time and it ultimately ended.</p>
+            </div>
+            <div class="item">
+            <h1>Grey Daze</h1>
+            <p>Shortly after the split up of Sean Dowdell And His Friends?, Sean Dowdell met bassist Jonathan Krause through Sean's brother and decided to form a new band. They put up an ad on the Phoenix New Times to find a guitar player and vocalist, meeting guitarist named Steve Mitchell. They tried out a few different singers, but it didn't work out. After listening to the Sean Dowdell And His Friends recording, Steve suggested to try and ask Chester Bennington to come back and audition for this new band as well, so the band invited him and Chester joined the band right away.[12]
+
+            After playing dozens of shows in their local Arizona, the band recorded their debut Wake Me in 1994. The band has continued gigging endlessly playing all sorts of events and venues, including bars, restaurants, warehouses, private house parties, desert gigs, proving themselves as a household live band. That led them to be able to play and sell out bigger venues and open for many international acts playing in the area. Thanks to Kerry Rose's work and the fact that Mace Beyers was the Electric Ballroom's production manager, the band became the club's resident band and played a huge number of shows there until it was closed in October, 1997.
+
+            Once getting a record deal with Real Records, the band began work on their second album, ...No Sun Today and released it in 1997. Sometime in the second half of 1998, shortly after their tour to Southern California that included showcases for major label executives, the band members separated their ways. Even though the band was planning to release their third CD sometime that year [13], the fact that none of the label executives came forward and the overall frustration over the band's seeming disability to make it to the next level has led to more personal conflicts between the band members, so Chester and Mace Beyers decided to leave the band.</p>
+            </div>
+            <div class="item">
+            <h1>Linkin Park</h1>
+            <p>Linkin Park formed under the name "Xero" in 1996, the original lineup consisting of Mike Shinoda, Mark Wakefield, Brad Delson, Rob Bourdon, Joe Hahn, and Dave "Phoenix" Farrell. Vocalist Mark Wakefield left the band to pursue a different career as things weren't working out with Xero. Chester Bennington joined the band in 1999, after auditioning via recommendation of his lawyers to Jeff Blue of the A&R Recordings branch of Zomba Music Group. They independently released the Hybrid Theory EP under the name Hybrid Theory in 1999.
+
+            The band decided that they wanted to make an impression with their new "teammates" at Warner Bros. Records and immediately put out a message to the entire staff saying they wanted to meet them. They set a date, and took over their conference room. They sat them down, exchanged pleasantries, and gave them some paperwork that outlined who the band were, what they intended to do, and how they thought their music, marketing, and fan club should be treated.
+
+            The band didn't realize how risky it was at the time, but luckily, label employees were enamored by their stunt, and decided to roll with them. The entire Warner staff was suddenly talking about the new band they just signed.[14] Despite this, the band would soon start facing many problems within the label.
+
+            The first problem was the name Hybrid Theory. Another band in the label was called Hybrid and was considered "the next big thing", so they didn't want Hybrid Theory getting confused with them. Each band member wrote different names on separate lists and met to decide which one they liked better. Some of the proposed names for the band were Plear (as in "Clear Plastic", but the label didn't like it), Probing Lagers, and Platinum Lotus Foundation.[15] Chester came up with "Lincoln Park" when driving and coming across a hometown park with that name.[16] Among 30 potential names, this was the only one all members of the band liked. Brad suggested that it would be important to acquire the domain lincolnpark.com, but it was already taken. It would take around $10,000 to acquire the domain, so they changed the new potential band name from "Lincoln" to "Linkin" in order to get it. linkinpark.com was registered on May 24, 2000,[17] and the park has since been renamed to Christine Emerson Reed Park.[18] The band also registered one domain name for each of the rejected names.
+
+            The next problem was their music. In the lyrics of Fort Minor's 'Get Me Gone,' which Mike describes as "a little glimpse into what goes on behind the scenes,"[19] Mike claims someone suggested they should just be a rock band and he should quit rapping. Chester was the first to receive the news through Don Gilmore. Chester was told he was "the star" and that Linkin Park should be his band. Mike would be relegated to just being the keyboard player or, worse, jettisoned. The band positioned themselves against it. Then the label wanted to bring in another rapper, a reggae vocalist called Matt Lyons. After that, they told Mike to try and rap like Fred Durst of Limp Bizkit. This led the band to cut off all communications with the label unless absolutely necessary.[20]
+
+            "At one point, one of the label reps came into the studio and was like 'I don't know, man. This doesn't sound right. This song was weird. This song doesn't sound right.' So our producer was like 'Hold on. Let me try something real quick.' He reaches over and turns a nob. Dude's like 'I don't know whatever you did, man. That's fucking perfect like this. So cool.' All he did was turn the volume up," said Chester.[21]
+
+            The band's image was also questioned by the label. When Mike submitted the original logo for Hybrid Theory to the record label, it was shot down by an A&R for appearing "too Asian."[22] Someone brought an image consultant who suggested the band should have a gimmick, saying Joe should wear a lab coat and a cowboy hat and call himself "The Doctor".[23]
+
+            Although Phil Quartararo, who was president of Warner Bros. Records at that time, takes credit for personally directing and overseeing the signing, recording and marketing of the band,[24] Chester says the president of the company didn't like the band[25] and didn't want to release their album. "We had support from a couple people within the record company but the top guy at the time was not a fan. He made that very clear that he was not a fan, made it very clear that he couldn't care less about the record and that we were literally the last item on the priority list beyond, below even probably getting the toilets cleaned. So it was pretty clear."[26]
+
+            Despite all of these hardships, Linkin Park eventually released their debut album Hybrid Theory in October 2000, achieving international fame and success. Spawning singles like 'One Step Closer' and 'Crawling' that showcased the power of Bennington's voice, the band and its members went on a world tour in support of their debut, Chester's voice becoming an iconic staple of early 2000's rock and metal music. The band would go on to record and release multiple number one records across multiple genres, selling out arenas around the world in support of each.
+
+            Linkin Park went on hiatus from 2017 to 2024 following the death of Chester Bennington, remaining largely inactive beyond a few archival projects and releases through those years. They performed a tribute show to Chester on October 27, 2017, performing a set featuring tracks from throughout the band's career with guests from throughout the music industry filling in for Chester's parts.
+
+            During this hiatus, Linkin Park released a number of archival projects that saw new music from Chester be released posthumously. In 2020, the band released the Hybrid Theory (20th Anniversary Edition), officially releasing a handful of demos including lead single 'She Couldn't,' which had only been available to the fanbase through leaks. The Meteora (20th Anniversary Edition) saw the band achieve chart success again with the release of 'Lost,' propelling the band back to the top of the charts for the first time since 2017. The band released a greatest hits compilation in early 2024 entitled Papercuts, wrapping up the Chester-era of the band with their most popular songs as well as the reveal of One More Light-era track 'Friendly Fire' and the release of 'QWERTY' as a single.
+
+            Linkin Park officially revealed Emily Armstrong as their new vocalist in the place of Chester in September 2024.</p>
+            </div>
+            <div class="item">
+            <h1>Dead By Sunrise</h1>
+            <p>Chester’s side-project Dead By Sunrise was created in 2005. After the Meteora touring cycle for Linkin Park, the band wanted some down time after the hectic world tour in support of the album. At the same time, they were facing issues with their record label Warner Bros which made the band angry. In a February 2005 press interview about Music For Relief that asked about progress on new Linkin Park music, Chester replied, "The last thing on my mind is making a record."
+
+            In spring 2005, Chester was facing a bitter divorce from his wife Samantha Bennington earlier in the year and he turned to alcohol and drugs to cope with it. His good friend Ryan Shuck, whom Chester knew from the days when Orgy and Linkin Park would record at NRG Studios at the same times and also play together, eventually saved Chester’s life by being a strong support for him. Around the same time, Chester played some solo music for Ryan that he had worked on and Ryan was instantly a big fan. The first song that sparked the project was 'Let Down.'
+
+            Chester became even closer to Ryan and Amir Derakh and executive produced their album Death To Analog after becoming involved in Julien-K’s music as well. Chester taught Ryan how to sing in new ways and laid down demo vocals for quite a few Julien-K songs so Ryan could go back and record them at a later time for the Julien-K debut album.
+
+            At this point, the three of them began to work on Chester’s solo material. At this point, they were referring to the project under the name “Snow White Tan”. Chester said that he’d give Ryan and Amir a song, come back later in the day and be blown away at how great the work was that they did to the track… turning it into a full song from just an acoustic demo.
+
+            In an LPTV episode about 'Let Down,' Chester said, “The very first song that kind of sparked this whole project is a song called "Let Down". I think I was playing it at my house and Ryan heard me singing and he was like “what’s that?” and I told him that it was a song that I had written. And he pretty much told me that he really liked the song… in many words. And he asked if I had more and I said, “yeah I have more and I can write more”. And that’s kind of what started the whole thing.
+
+            In August 2005, news of the project began to surface. A Blabbermouth article from August 4, 2005 mentioned, "LINKIN PARK frontman Chester Bennington is currently in the studio recording his debut solo album with producers (and ORGY members) Amir Derakh and Ryan Shuck. The as-yet-untitled CD is expected to be completed before the end of the year for an early 2006 release." Additionally, Rolling Stone that month said, "LINKIN PARK screamer CHESTER BENNINGTON will release a solo record, and he breaks the news in the Smoking Section. "We took Nineties rock, mixed it with Eighties pop like DEPECHE MODE, THE CURE, and BAUHAUS and smashed them together," says Bennington. "It's fuckin' driving beats and walls of guitars." Songs like 'Morning After' and 'Walking in Circles' are in the can, and Bennington is especially psyched about a new song, which a friend says "sounds like T.REX."
+
+            The first public appearance of Snow White Tan in any form was after Hurricane Katrina. A benefit show was organized in Nashville, TN for September 10, 2005 and "Chester Bennington" was listed as a performer. Chester, Ryan, and Amir debuted a beautiful acoustic version of 'Let Down' and Chester later joined Mötley Crüe for 'Home Sweet Home.' On November 5, 2005, the group was going to perform an acoustic set at Tempe, Arizona's Taste The Music Festival but it was canceled. Amir said on October 27, 2005, "What would have been the first performance of Chesters solo project with Julien-K at the Taste The Music Festival in Arizona Nov 5th has been cancelled... WE WILL NOT BE PERFORMING! It was decided today not to play the show... SORRY!!! Let's just say it had nothing to do with us being "ready" to play and BTW we were only doing 3 songs acoustically anyway..."
+
+            Although the album was completed and ready to release, Chester decided to put the project on hold in 2005 because Linkin Park was beginning to record their album Minutes To Midnight.
+
+            In the Artisan News Service interview from September 2007, Ryan says, "It turned into literally in a few days Julien K became Chester's band Dead by Sunrise so we literally stopped our record and recorded a record with Chester which is complete. Of course, the reason that didn't come out is because you have the Linkin Park record in front of it. There was a little bit of back up in timing and complications but basically Julien K is two bands. With Chester singing it's Dead by Sunrise and when I sing it's Julien K. Julien K is decidedly a bit more Electro but Dead by Sunrise a little bit heavier, a little bit more rocky and it's still got, Chester loves Electro music and he loves what we're doing."
+
+            Chester brought the band back together in May 2008 for the annual Club Tattoo Anniversary Party in Tempe, Arizona. He had previously played the party twice with Bucket Of Weenies in 2005 and 2006, but elected to do something different in 2008 after 2007's party was canceled. Julien-K performed an eight song set, with Chester joining for 'Technical Difficulties,' which he also lends his voice to on the studio version. After the Julien-K set, the band stayed on stage and performed three Dead By Sunrise songs. This was the first official Dead By Sunrise performance and the first official use of its new name after the switch from Snow White Tan. 'Walking In Circles,' 'Morning After,' and 'My Suffering' were all debuted in demo forms. This would be the third time Chester performed 'Morning After' with a different band, following its 2001 Linkin Park solo acoustic performance in Berlin and the Bucket Of Weenies performances of the song in 2005-2006.
+
+            On a February 4, 2009 blog post, Mike Shinoda said, "I was just hanging out with Chester, and got a chance to hear some of his new solo material! In case you haven't heard, he's doing a solo record (he's doing double-duty, working on his album and the LP album simultaneously). The project is called Dead By Sunrise, and the album is being produced by Howard Benson. He played me 9 songs, two of which had amazing vocals. I thought I could hear influences from T-Rex, overall it's a pretty punch-you-in-the-gut rock record. Very cool...look for it later this year, probably September-ish. It's going to be incredible!"
+
+            In early August 2009, it was confirmed that 'Crawl Back In' would be the first single, and it was released on August 16th on the Dead By Sunrise MySpace page. The song was originally on the Transformers: Revenge Of The Fallen soundtrack for May 2009 but it was removed before release.
+
+            The album was released in October 2009 worldwide.</p>
+            </div>
+            <div class="item">
+
+            <h1>Bucket of Weenies</h1>
+            <p>Bucket of Weenies is the name of the defunct cover band that Chester was a member of from 2005 to 2007.
+
+            Originally formed to play the 2005 Club Tattoo Anniversary Party, Bucket of Weenies played five shows throughout their career in 2005 and 2006. Their sole 2007 show, for the Club Tattoo Anniversary Party, was canceled when the event did not end up taking place.
+
+            The band performed covers from The Cure's 'Boys Don't Cry' to '20 Eyes" by The Misfits (which later was recorded by Dead By Sunrise), as well as original songs - 'The Morning After' by Chester, and 'Dark Lover' and 'Beer N' A Cigarette' by Mike Brown. </p>
+            </div>
+            <div class="item">
+
+            <h1>Stone Temple Pilots</h1>
+            <p>One of Chester's first favorite bands was Stone Temple Pilots. As a child, he would sing songs and dream of being the lead singer of Depeche Mode and Stone Temple Pilots.[27] These childhood dreams came true in May 2013, when he was announced as the band's new lead singer following the departure of Scott Weiland a few months earlier in February. The announcement came with their first performance together, with a surprise set at the 2013 KROQ Weenie Roast, performing before Thirty Seconds To Mars. On top of performing the band's classics, they debuted the brand new song 'Out Of Time,' which featured on their High Rise EP that was released later that same year.
+
+            Speaking to MusicRadar on October 15, 2013, Dean DeLeo explained how they started working together: "We kind of did it a little backwards, actually [laughs]. We spoke with him on the phone, and we all agreed that we wanted to do this. The second thing we did is what we should have done first – we probably should have gotten in a room. But it's something I felt in my bones. I felt that it was going to be productive and creative. Oh, goodness… My timeline isn't so great. I'd say it was a few weeks or maybe a month later, if that. The songwriting process started a little bit before that with the use of technology and kind of MP3ing each other ideas. When we got in a room together, Robert had already fooled around with a rough idea of Out Of Time. We came into the session and dove right into that."[28]
+
+            The band embarked on a U.S. Tour in the fall of 2013 in support of the record, squeezing in two shows in Japan in November. The band drew from their entire discography for these tracks, playing classic tracks like 'Dead & Bloated' and 'Trippin' On A Hole In A Paper Heart,' tracks they had never played before like 'Church On Tuesday,' as well as 'Out Of Time' and 'Black Heart' from the new EP. On some dates, the band opened for Mötley Crüe. The band had planned an international tour in 2014 with stops in India, Hawaii, Indonesia, and the Soundwave festival in Australia, but this was cancelled due to Chester's commitments to Linkin Park (who were recording The Hunting Party at the time). The band did, however, manage to play some tour dates throughout the year in the United States between gaps in Linkin Park's touring schedule.
+
+            The band embarked on another U.S. Tour in the spring of 2015 in the United States, debuting 'Adhesive' and 'Pruno' for the first time live. The band toured sporadically for the rest of the year, playing their final show in October at Sacramento's Aftershock festival. Chester's departure from the band was announced the next month, citing his scheduling conflicts with Linkin Park as a critical reason for leaving.[29] Chester rejoined the band once more in March 2016 for a fundraising event for Chester's kids' school district before being formally replaced by Jeff Gutt.
+
+            Before joining the band, Chester had previously guested with Stone Temple Pilots while Linkin Park was on tour with them in 2001 on the Family Values Tour, coming out to perform 'Dead & Bloated' with them. Stone Temple Pilots released a version of their song 'Wonderful' from their album Shangri-La Dee Da featuring Chester in May 2002 for The Family Values Tour 2001 live album. Originally thought to have been recorded live on the tour, it was later revealed that Chester's parts were actually recorded after the tour, with the instrumental being recorded live.[30] Chester said 'Wonderful' is his favorite song off Shangri-La Dee Da[31] and, overall, one of his favorite Stone Temple Pilots songs.[32]</p>
+            </div>
+            <div class="item">
+            <h1>Kings of Chaos</h1>
+            <p>Chester joined the rock supergroup Kings Of Chaos for a number of shows in December 2016. The lineup at this time consisted of Matt Sorum (Guns N' Roses) on drums, Steve Stevens (Billy Idol), Billy Duffy (The Cult), and Billy Gibbons (ZZ Top) on guitar, Robert DeLeo (Stone Temple Pilots) on bass, and Corey Taylor (Slipknot, Stone Sour) and Chester on vocals. Chester would come out to sing a number of covers with the band, including Stone Temple Pilots' 'Interstate Love Song' and 'Sex Type Thing,' The Cult's 'Edie (Ciao Baby),' Led Zeppelin's 'Whole Lotta Love,' and more. Chester played one more show with the band in April 2017 at the Toyota Grand Prix of Long Beach in California, playing covers of ZZ Top, Stone Temple Pilots, The Cure, Led Zeppelin, and The Cult.</p>
+            </div>
+            <div class="item">
+
+            <h1>Music Production</h1>
+            <p>Chester has worked as a producer for a number of projects outside of Linkin Park. His best known venture is with industrial rock band Julien-K, the band members of which he created the Dead By Sunrise project with. Amir Derakh in a November 9, 2009 interview with The Rebel Yell describes how they became close to Chester: "We met Chester when we were in Orgy. We were recording our second record in a studio in Hollywood and Linkin Park was in the same studio in a different room. Chester was kind of singing in the hall, warming up and stuff. We heard him so Ryan went down and quickly made friends with the guys from Linkin Park. This is when they were doing their first record. It turns out that they were on our label and when our record came out their record came out. We ended up taking them out on tour and we all became friends very quickly. We’ve really been friends ever since and it was just a natural progression to do something together. It was something we had always talked about."
+
+            Chester acted as an executive producer for their debut album Death To Analog, featuring in the music video for their song 'Kick The Bass.' On Projekt Revolution 2007, Chester came out during their set to perform 'Technical Difficulties' with the band on multiple occasions. Lead vocalist Ryan Shuck had to attend a wedding during the day of the band's show at Tinley Park, Illinois, so Chester performed the whole set with Julien-K as its vocalist.
+
+            Chester was also the executive producer for the band Hellflower's debut EP US-You in 2012. In 2015, he worked with Alec Puro and Linkin Park band members Mike Shinoda, Joe Hahn, and Dave "Phoenix" Farrell for the original score to Hahn's MALL in 2015, featuring new instrumental tracks and some completed tracks from previous Linkin Park album sessions.</p>
+            </div>
+            <div class="item">
+            <h1>Solo Ventures</h1>
+            <p>Chester has made a number of solo appearances as a guest on other artists' songs as well as some of his own music. His sole solo credit comes from the original score of 2002's Queen Of The Damned movie, creating the track 'System' with Richard Gibbs and Korn's Jonathan Davis.
+
+            Chester's guest appearances go as far back as 2002, appearing on the song 'Karma Killer' from Cyclefly's second album, Crave. Chester and Mike Shinoda both appeared on Handsome Boy Modeling School's 'Rock And Roll (Could Never Hip Hop Like This) Part 2' in 2005. Chester appeared by himself on DJ Z-Trip's 'Walking Dead' in 2005 as well, performing the song with him at the Coachella festival that year. He also appeared on a version of Mötley Crüe's 'Home Sweet Home' in benefit of victims of Hurricane Katrina, performing the song with them at the ReAct Now: Music & Relief benefit, which raised $30 million for relief aid. A remixed studio version of 'Morning After' with Julien-K was released in 2006 for the Underworld: Evolution original soundtrack, and again working with them plus Mindless Self Indulgence that same year on a song called 'What Do They Know?' Chester featured on hip-hop artist Young Buck's 'Slow Ya Roll' from his second album, Buck The World in 2007. Chester took a few years off of collaborations before returning in 2012 on Santana's cover of The Doors' 'Riders On The Storm' with Ray Manzarek.
+
+            Some collaborations with Chester were either released or came to light posthumously. Lamb Of God's Mark Morton worked with Chester on his debut solo album in April 2017, with the record being released in 2019 along with the single 'Cross Off' featuring Chester. A demo of Slash's 'Doctor Alibi,' entitled 'Crazy,' was played on Chris Flores' interview on Episode 428 of the Guns N' Roses-themed podcast Appetite For Distortion in 2023, with apparently no plans to release it in the future. Additionally, a live version of the song 'Waiting For Tomorrow' by Martin Garrix featuring Mike Shinoda reveals that Chester was originally planned to feature in the song as well.
+
+            Chester made a number of live appearances on top of his in-studio appearances throughout his career, guesting during sets of bands like (hed) p.e. (singing 'Bartender'), Disturbed (performing Pantera's 'Walk'), Chris Cornell (performing Temple Of The Dog's 'Hunger Strike'), and more. Chester rarely played any full sets by himself, with the exception of the 2012 Stars Of The Season Gala, where he performed covers of The Beatles, David Bowie, Oasis, The Cure, Bob Dylan, and The Who with some of his friends as a backing band. Chester made a number of appearances with supergroup Camp Freddy as well, the last time bringing Mike Shinoda along to perform covers of Aerosmith's 'Walk This Way,' Beastie Boys' 'Sabotage,' and Linkin Park's 'One Step Closer.' </p>
+            </div>
+            <div class="item">
+
+            <h1>Film and TV</h1>
+            <p>Chester has made a number of cameos in films, as well. He made two appearances within the Crank movie series, appearing in the first movie in 2006 as a customer at a pharmacy and appearing in the sequel, Crank: High Voltage in 2009 as a spectator of a horse race. He appeared in Saw: 3D in 2010 as Evan, a racist character who met a terrible fate in typical gory Saw-fashion. He also appeared in an interview in the Thirty Seconds To Mars/Jared Leto documentary Artifact, speaking on record labels and how they can negatively affect their artists.
+
+            Chester had plans to create a TV show with his friend Church and television producer and writer Trip Taylor in 2011 called Mayor Of The World, but the show never made it through production.</p>
+            </div>
+            </div>
+
+        <!-- </section> -->
+    
+        </div>
     </main>
     
     <footer class="footer-wrapper">
-    <p>&copy; Linkin Park Fans 2025 (Educational Project)</p>
-        <p><b><i>Copyright Disclaimer:</i></b>
-         The content used in this Website is intended for educational and informational purposes only. All rights to the images, music, clips, and other materials used belong to their respective owners. I do not claim ownership over any third-party content used.</p>
+     
+           
+    
    
-    <a href="mailto:noirkatanas@gmail.com">Get in touch! <img src="assets/images/mail-icon.png" alt="Get in touch!"> </a>
-    <a href="tel:+15354823975" target="_blank"><img src="assets/images/telephone-icon.png" alt=""></a>
-    <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/facebook-icon.png" alt=""></a>
-    <a href="https://www.instagram.com" target="_blank"><img src="assets/images/instagram-icon.png" alt=""></a>
-    <a href="https://www.tiktok.com/en/" target="_blank"><img src="assets/images/tiktok-icon.png" alt=""></a>        
-        
-  </footer>
+    <div class="footer-icon-wrapper">
+        <div class="email-icon">
+             <a href="mailto:noirkatanas@gmail.com" target="_blank"><img src="assets/images/email-icon.png" width="50px" alt="E-mail"> </a>
+        </div>
+        <div class="phone-icon">
+             <a href="tel:+15354823975" target="_blank"><img src="assets/images/telephone-icon.png" width="50px" alt="Call"></a>
+        </div>
+        <div class="facebook-icon">
+             <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/facebook-icon.png" width="50px" alt="Facebook"></a>
+        </div>
+        <div class="instagram-icon">
+             <a href="https://www.instagram.com" target="_blank"><img src="assets/images/instagram-icon.png" width="50px" alt="Instagram"></a>
+        </div>
+        <div class="tiktok-icon">
+             <a href="https://www.tiktok.com/en/" target="_blank"><img src="assets/images/tiktok-icon.png" width="50px" alt="Tik Tok"></a>
+        </div>
+        <div class="twitter-icon">
+             <a href="https://www.twitter.com/en/" target="_blank"><img src="assets/images/twitter-icon.png" width="50px" alt="Twitter"></a>
+        </div>
+    </div> 
+        <div class="question">
+        <h2>Got a Question?</h2>
+        <p>Reach Out Linkin Park Fans</p>
+        </div>
+
+           <p class="footer-page-name">
+            <b><i>Copyright Disclaimer:</i></b>
+             The content used in this Website is intended for educational and informational purposes only. All rights to the images, music, clips, and other materials used belong to their respective owners. I do not claim ownership over any third-party content used. <br>
+             </p>
+             <p>
+                     &copy; Linkin Park Fans 2025 (Educational Project)</p>
+                    
+            
+            
+ </footer>
     </div>
 </body>
 </html>

@@ -1,10 +1,18 @@
 
 /* HOME PAGE STYLE */
-.page-wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
 
+:root{
+    --bg-color:#494545;
+    --text-color:white;
+    --title-color:silver;
+    --tbl-color: ;
+    --tbl-text-color: ;
+}
+
+ *,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 
@@ -13,20 +21,228 @@ iframe {
     width: 100% !important;
 }
 
-p, h2, h1{
-    display: flex;
-    justify-content: flex-start;
-    text-wrap: inherit;
-    padding-left: 2%;
-    padding-right: 2%;
-    color: #dfe6e6;
+img{
+    max-width: 100%;
+    border-radius: 50px;  
 }
-p{
-    border: 8px solid silver;
+
+
+.latest-news{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border: 2px solid gray;
+}
+
+section{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 0.5%;
+    margin: auto;
+}
+
+.article-title{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    border: 10px groove gray;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-style: groove;
+    border-radius: 50px;
+    background-color: rgb(17, 16, 16);
+    color: white;   
+}
+
+.article-title:hover{
+    transform: scaleX(0.7);
+    transition: ease-in-out,  4s;
+
+}
+
+.from-zero-article-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 97%;
+    flex: 1 1 auto;
+    margin: auto;   
+}
+
+.article-images{
+    display: flex;
+    /* flex: 1 1 auto; */
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: auto;
+    /* max-width: 90%; */
+    border: solid 10px rgb(0, 0, 0);
+    border-radius: 50px;
+
+    
     
 }
 
-img{
+.index-par{
+    display: flex;
+    flex: 1 1 auto;
+    font-weight:500;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 0.5rem ;
+    color: #000000;
+    background-color: rgb(187, 186, 185);
+}
+
+.article-par{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin: 0.5rem;
     max-width: 100%;
+}
+.index-par-1{
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    color: #000000;
+    background-color: rgb(187, 186, 185);
+}
+
+.index-par-2{
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    color: #000000;
+    background-color: rgb(187, 186, 185);
+    margin: 1rem;
+}
+
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    font-size: large;
+    
+    
+
+}
+
+/* FOOTER STYLES */
+.footer-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    margin: auto;
+}
+
+.question{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+.question:hover{
+    transition: 1s ease-in-out;
+    transform: scale(1.3);
+}
+
+/* CONTACT US ICON STYLES */
+.footer-icon-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    flex-wrap: wrap;
+    max-width: fit-content;
+    padding: 1.5rem;
+    margin: 3rem;
+    gap: 1rem;
+    border: 5px ridge;
+    border-radius: 50px;
+}
+
+.email-icon:hover{
+    transition: 1s ease;
+    transform: rotate(360deg);   
+}
+.phone-icon:hover{
+    transition: 1s ease;
+    transform: rotate(360deg);
     
 }
+.facebook-icon:hover{
+    transition: 1s ease;
+    transform: rotate(360deg);
+    
+}
+.instagram-icon:hover{
+    transition: 1s ease;
+    transform: rotate(360deg);
+    
+}
+.tiktok-icon:hover{
+    transition: 1s ease;
+    transform: rotate(360deg);  
+}
+.twitter-icon:hover{
+    transition: 1s ease;
+    transform: rotate(360deg);  
+}
+.footer-page-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    padding: 2rem;
+    height: fit-content;
+    border-top: 3px dashed #000000;
+    border-bottom:3px dashed whitesmoke;
+    border-left: 3px double whitesmoke;
+    border-right: 3px double rgb(0, 0, 0);
+    
+}
+
+
+
+.disclaimer{
+    /* display: flex;
+    flex: 1 1 auto;
+    padding: 2rem; */
+}
+
+.footer-disclaimer{
+    display: flex;
+    padding: 2rem;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    color: #000000;
+    background-color: rgb(187, 186, 185);
+    margin: 1rem;
+    width: 45%;
+    height: fit-content;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

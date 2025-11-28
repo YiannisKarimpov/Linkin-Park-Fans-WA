@@ -1,68 +1,134 @@
 
 /* HEADER AND NAVIGATION STYLE */
 
-.page-wrapper{
-    width: 90%;
+.page-wrapper{ 
+    display: flex; 
+    flex-direction: column;
+    width: 95%;
     margin: auto;
     border: 1px solid red;
-    background-color: #1e1f20;
-
+    background-color: #494545;
 }
 
-.header-banner{
-    background-image: url(../images/linkin-park-banner.png);
-    background-size: 86% 100%;
-    background-repeat: no-repeat;
-    background-position: right;
-    border-bottom: 5px solid silver;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    
+header{
 
+  position: sticky;
+  top: 0;
+}
+
+.img-home-btn-area{
+    display: flex;
+    justify-items: left;    
+    width: fit-content;
+    
+   
 }
 
 ul{
     margin: auto;
-    list-style: none; 
     display: flex;
-    justify-content: left;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 1.6rem;
 }
+
 ul li {
     display: flex;
     position: relative;
-    line-height: 2.5rem;
+    line-height: 2.1rem;
     text-align: left;
 }
+
 ul li a{
-    display: flex;
-    justify-content: left;
-    padding: 10px 20px;
+    padding: 10px 20px 0px 20px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    border-radius: 100px;
+    border-radius: 50px;
 }
+
 ul li a:hover{
     color: rgb(255, 255, 255);
-    background-color: #4b4b4b;
+    background-color: #9eaeb4;
     opacity: 100%;
 }
+
  img{
     
     border-style: none;
     
  }
 
-@media screen (min-width: 720px);{
-    
+   /* HAMBURGER MENU */
+#menu__toggle{
+    opacity: 0;
+}
+#menu__toggle:checked + .manu-btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #ff0000;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: fit-content;
+  margin: 0;
+  padding: 120px 50px;
+  list-style: none;
+  background-color: #bbbbbb;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .35s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .55s;
+}
+.menu__item:hover {
+  background-color: #9eaeb4;
 }
 
-.nav-menu{
-    
-}
-
+/* END OF HEADER STYLES */
 
 
 
