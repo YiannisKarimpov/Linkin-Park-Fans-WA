@@ -1,5 +1,15 @@
 /* DISCOGRAPHY STYLES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+*{
+    margin: 0;
+    padding: 0;
+    /* font: inherit; */
+}
 .lp-albums-wrapper{
     width: 95%;
     margin: auto;
@@ -11,6 +21,8 @@ iframe{
    height: 520px;
    margin: 1%;
    padding: 1%;
+   border-radius: 50px;
+   
 }
 
 main{
@@ -20,35 +32,71 @@ main{
 }
 
 section{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
     flex-wrap: nowrap;
     margin: auto;
-    gap: 2rem;
+    gap: 1rem;
     border: 15px solid rgb(201, 201, 201);
     border-radius: 15px;
 }
 
-.albums-2000-2024{
+.top-title{
     display: flex;
-    width: 90%;
-    margin: auto;
-    flex-wrap: wrap;
-    border: 15px solid rgb(129, 118, 112);
+    justify-content: center;
+    border-bottom: 22px double white;
+    border-right: 12px double black;
+    border-left: 12px double white;
+    border-top: 22px double black;
+    padding: 1em;
+    margin: 2rem;
 }
 
 
-h1{
+
+.albums-2000-2024{
+    display: flex;
+    width: 93%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 2em;
+    
+}
+
+
+.album-title{
     display: flex;
     justify-content: center;
-    color: silver;
-    border: 4px solid black;
+    flex-wrap: wrap;
+
+    border: 10px groove gray;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-style: groove;
     border-radius: 50px;
-    word-spacing: 0.2rem;
-    width: 90%;
-    margin: auto;
+    background-color: rgb(17, 16, 16);
+    color: white; 
+}
+.album-par{
+    display: flex;
+    flex: 1 1 auto;
+    font-weight:500;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 0.5rem ;
+    color: #000000;
+    background-color: rgb(187, 186, 185);
+}
+
+
+h1:hover{
+    transform: scaleX(0.7);
+    transition: ease-in-out,  4s;
+
 }
 
 h1:hover{
@@ -56,40 +104,27 @@ h1:hover{
 }
 
 table{
-    display: flex;
-    justify-content: center;
-    flex: 1 1 300px;
-    margin: auto;
-    table-layout: fixed;
+    flex: 1 1 auto;
+    table-layout: auto;
     border-collapse: collapse;
-    max-width: 100%;
+    max-width: inherit;
     
     
 }
 
 th,
 td{
-   
+   color: #000000;
    padding: 0.2em;
-   border: 3px solid black; 
+   border: 3px solid rgb(8, 8, 8); 
+   font-weight: 800;
 
-   background-color: #807b70;
+   background-color: #444444;
    text-align: center;
    
 
 }
 
-
-p{
-    display: flex;
-    width: 80%;
-    flex-wrap: wrap;
-    border: 5px solid rgb(46, 73, 50);
-    margin: auto;
-    font-size: 1.3rem;
-    color: antiquewhite;
-
-}
 
 .about-album{
     display: flex;
@@ -106,29 +141,155 @@ p{
     width: 80%;
     flex-wrap: wrap;
     margin: auto;
-    gap: 1rem;
+    gap: 2rem;
     max-width: 100%;
     
 
 }
 #album-image-ht{
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex: 0 1 auto;
     display: flex;
-    max-width: 100%;
-    /* justify-content: left; */
+    max-width: inherit;
     margin: auto;
-    /* border: 3px solid yellow; */
 }
+#album-image-mt{
+    flex-wrap: nowrap;
+    flex: 0 1 auto;
+    display: flex;
+    max-width: inherit;
+    margin: auto;
+}
+#album-image-mtm{
+    flex-wrap: nowrap;
+    flex: 0 1 auto;
+    display: flex;
+    max-width: inherit;
+    margin: auto;
+}
+#album-image-ats{
+    flex-wrap: nowrap;
+    flex: 0 1 auto;
+    display: flex;
+    max-width: inherit;
+    margin: auto;
+}
+#album-image-lt{
+    flex-wrap: nowrap;
+    flex: 0 1 auto;
+    display: flex;
+    max-width: inherit;
+    margin: auto;
+}
+#album-image-thp{
+    flex-wrap: nowrap;
+    flex: 0 1 auto;
+    display: flex;
+    max-width: inherit;
+    margin: auto;
+}
+#album-image-oml{
+    flex-wrap: nowrap;
+    flex: 0 1 auto;
+    display: flex;
+    max-width: inherit;
+    margin: auto;
+}
+#album-image-fz{
+    flex-wrap: nowrap;
+    flex: 0 1 auto;
+    display: flex;
+    max-width: inherit;
+    margin: auto;
+}
+
  
 img{
     overflow: clip;
     content: inherit;
+    border-radius: 50px;
+    
+}
+/* STORYLINE STYLES */
+
+.storyline-title{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: auto;
+border-bottom: 15px double silver ;
+border-right: 15px double #fff;
+
 }
 
+.story-lp{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border: 8px solid lightgray;
+    background-color: rgb(155, 168, 179);
+    border-radius: 50px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+
+}
+
+
+
+section{
+    width: 87%;
+}
+
+.formation{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill);
+    border: 5px double #807b70;
+    border-radius: 50px;
+    padding: 0.5em;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: fit-content;
+    margin: auto;
+    
+}
+.formation-par{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 5px solid silver;
+    border-radius: 50px;
+    padding: 1.5em;
+
+    background-color: rgb(155, 168, 179);
+    font-weight: 700;
+    
+}
+
+.members-title{
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    border: 10px double  silver;
+    width:fit-content;
+    margin: auto;
+    padding: 1em;
+    background-color: bisque;
+    
+}
+
+.members-about{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    border: 10px double  silver;
+    background-color: bisque;
+    padding: 1em;
+
+}
 /*IMAGE SLIDER NAV STYLES */
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     padding: 2rem;
@@ -181,48 +342,11 @@ img{
 }
 
 
-/* STORYLINE CHESTER */
-
-.grid-container{
-    margin: 2rem;
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows:repeat(2, );
-    flex-wrap: wrap;
-    column-gap: 1rem;
-    row-gap: 1rem;
-    
-}
-
-.mike-shinoda{
-    margin: 2rem;
-    display: grid;
-    grid-template-columns:repeat(3, 50%);
-    grid-template-rows:repeat(3, 30%);
-    grid-column-start: ;
-    
-}
-
-#chester{
-    max-width: 100%;
-    padding: 0.5rem;
-}
-
-.chester{
+/* Events styles */
+.event-tables{
     display: flex;
+    flex: 0 1 auto;
     flex-wrap: wrap;
+    font-size: 1px;
+    max-width:fit-content;
 }
-
-.part-1{
-}
-.part-2{
-   
-}
-
-.formation{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 3px solid black;
-}
-
