@@ -216,7 +216,6 @@ img{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-padding: auto;
 border-bottom: 15px double silver ;
 border-right: 15px double #fff;
 
@@ -243,7 +242,7 @@ section{
 
 .formation{
     display: grid;
-    grid-template-columns:  repeat(auto-fill);
+    grid-template-columns:  repeat(1fr,auto-fill);
     border: 5px double #807b70;
     border-radius: 50px;
     padding: 0.5em;
